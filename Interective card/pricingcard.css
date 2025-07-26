@@ -1,0 +1,109 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1db954, #191414);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #d1d1d1;
+}
+
+/* Card Container */
+.cardparent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+/* Cards */
+.card {
+  background-color: #282828;
+  border-radius: 15px;
+  width: 300px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Plan Titles */
+.card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+/* Price */
+.price {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #1db954;
+}
+
+/* Description */
+.desc {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #b3b3b3;
+}
+
+/* Features */
+.features {
+  list-style: none;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+/* CTA Button */
+.cta {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #1db954;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta:hover {
+  background-color: #17a44a;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cardparent {
+    flex-direction: column;
+    align-items: center;
+  }
+}
